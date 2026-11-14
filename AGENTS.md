@@ -24,21 +24,19 @@ Next.js (App Router) · React 19 · TypeScript · Tailwind · Zod · `openapi-ty
 
 Sem biblioteca de estado global nem de cache no cliente: o servidor entrega os dados.
 
-Versões fixadas: <!-- preencher no walking skeleton: Next.js, React -->
+Versões fixadas: Next.js 16.4.6 · React 19.3.0 · TypeScript 5.9.3 · Tailwind 4.3.3 · Vitest 5.1.0 · MSW 3.0.5 · Node 24
 
 ## Comandos
-
-<!-- conferir no walking skeleton com o que o create-next-app gerou -->
 
 | Para | Comando |
 | --- | --- |
 | Servidor de desenvolvimento | `npm run dev` |
 | Lint | `npm run lint` |
 | Tipos | `npx tsc --noEmit` |
-| Testes | `npm test` |
+| Testes | `npm test` (`npm test -- --run` roda uma vez, como o CI) |
 | Build | `npm run build` |
-| Ponta a ponta | `npx playwright test` |
-| Gerar os tipos da API | <!-- preencher: openapi-typescript a partir do openapi.json da API --> |
+<!-- Ponta a ponta: `npx playwright test`, entra na F07 -->
+<!-- Gerar os tipos da API: openapi-typescript a partir do openapi.json da API, entra na F02 -->
 
 A API local precisa estar rodando (`../quita-backend-api`); o endereço vem de `API_INTERNAL_URL` no `.env.local`.
 

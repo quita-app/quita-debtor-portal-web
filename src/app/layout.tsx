@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
+import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans', // a variável que o tokens.css lê
 	subsets: ['latin'], // baixa só os caracteres do português (e do inglês)
+});
+
+const geistMono = Geist_Mono({
+	variable: '--font-geist-mono', // a variável que o tokens.css lê
+	subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -15,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
 	return (
-		<html lang="pt-BR" className={`${geistSans.variable} h-full antialiased`}>
+		<html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
 			<body className="min-h-full flex flex-col">{children}</body>
 		</html>
 	);

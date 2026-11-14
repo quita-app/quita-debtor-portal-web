@@ -1,25 +1,14 @@
-@import 'tailwindcss';
-@import './tokens.css';
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/tailwind.css";
 
-/* Tailwind classes read the Quita tokens: bg-background, text-foreground, bg-card... */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
-  --color-ring: var(--ring);
-  --color-destructive: var(--destructive);
-  --color-signature: var(--signature);
-  --color-celebrate: var(--celebrate);
+/* next/font serves Geist under a generated family name: point the font tokens at its variables. */
+:root {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --radius-sm: 10px;
-  --radius-md: 14px;
-  --radius-lg: 24px;
-  --radius-xl: 24px;
-  --radius-2xl: 36px;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 }

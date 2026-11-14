@@ -1,3 +1,4 @@
+import '../styles/landing.css';
 import { ApiHealth, apiHealth } from '@/lib/api/client';
 import { connection } from 'next/server';
 
