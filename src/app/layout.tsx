@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		'Portal do devedor do Quita: veja suas dívidas, simule e feche um acordo.',
 };
 
-export default function RootLayout({ children }: LayoutProps<'/'>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
 			<body className="min-h-full flex flex-col">{children}</body>
